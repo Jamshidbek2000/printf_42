@@ -6,7 +6,7 @@
 /*   By: jergashe <jergashe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/30 14:41:22 by jergashe          #+#    #+#             */
-/*   Updated: 2022/11/02 10:18:47 by jergashe         ###   ########.fr       */
+/*   Updated: 2022/11/04 15:15:31 by jergashe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,9 +43,11 @@ int	ft_printf(const char *input, ...)
 	int		result;
 
 	result = 0;
+	if (input == NULL)
+		return (result);
 	index = 0;
 	va_start(args, input);
-	while (input && input[index] != '\0')
+	while (input[index] != '\0')
 	{
 		if (input[index] != '%')
 		{
@@ -59,5 +61,6 @@ int	ft_printf(const char *input, ...)
 		}
 		index++;
 	}
+	va_end(args);
 	return (result);
 }

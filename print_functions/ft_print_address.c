@@ -6,15 +6,12 @@
 /*   By: jergashe <jergashe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 11:39:26 by jergashe          #+#    #+#             */
-/*   Updated: 2022/11/02 10:20:00 by jergashe         ###   ########.fr       */
+/*   Updated: 2022/11/04 14:10:46 by jergashe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_printf.h"
 
-// used 1 function outside
-
-// to be fixed!!!
 int	ft_print_address(unsigned long long address)
 {
 	int	count;
