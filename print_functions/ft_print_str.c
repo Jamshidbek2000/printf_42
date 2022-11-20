@@ -6,12 +6,14 @@
 /*   By: jergashe <jergashe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/30 15:55:26 by jergashe          #+#    #+#             */
-/*   Updated: 2022/11/01 16:23:30 by jergashe         ###   ########.fr       */
+/*   Updated: 2022/11/20 11:58:54 by jergashe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_printf.h"
 
+// The function prints string "str"
+// and returns the number of chars printed
 int	ft_print_str(char *str)
 {
 	if (str == NULL)

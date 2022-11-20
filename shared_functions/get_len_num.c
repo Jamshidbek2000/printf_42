@@ -6,12 +6,13 @@
 /*   By: jergashe <jergashe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 11:35:16 by jergashe          #+#    #+#             */
-/*   Updated: 2022/11/02 10:21:51 by jergashe         ###   ########.fr       */
+/*   Updated: 2022/11/20 12:16:08 by jergashe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_printf.h"
 
+// The function returns the length of "number"
 int	get_len_num(long number)
 {
 	int	len_count;

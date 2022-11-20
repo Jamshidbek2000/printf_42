@@ -6,9 +6,15 @@
 #    By: jergashe <jergashe@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/31 16:17:26 by jergashe          #+#    #+#              #
-#    Updated: 2022/11/04 15:22:42 by jergashe         ###   ########.fr        #
+#    Updated: 2022/11/20 12:17:19 by jergashe         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
+# This is a Makefile which can 
+# compile (make all)
+# recompile (make re)
+# delete object files (make clean)
+# delete object files and execuatable (make fclean)
 
 CC = cc
 

@@ -6,12 +6,13 @@
 /*   By: jergashe <jergashe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 14:18:14 by jergashe          #+#    #+#             */
-/*   Updated: 2022/11/04 16:40:54 by jergashe         ###   ########.fr       */
+/*   Updated: 2022/11/20 12:13:58 by jergashe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_printf.h"
 
+// The function returns the length of "hex" number
 int	get_len_hex(unsigned long long hex)
 {
 	int	len_count;
@@ -25,6 +26,8 @@ int	get_len_hex(unsigned long long hex)
 	return (len_count);
 }
 
+// The function converts decimal "hex" to dec
+// by printing it using recursion
 void	ft_hex_in_action(unsigned long long hex, char x_specifier)
 {
 	if (hex != 0)
@@ -37,8 +40,10 @@ void	ft_hex_in_action(unsigned long long hex, char x_specifier)
 	}
 }
 
-// lower_or_upper char helps to identify whether we should 
-// write hex in capital/lower case
+// The function takes a decimal number "hex" and
+// "x_specifier" which is 'x' or 'X' So that I can
+// print hex number either in capitals or in small letters
+// The function returns the length of number in hex representation
 int	ft_print_hex(unsigned int hex, char x_specifier)
 {
 	char		lower_or_upper;

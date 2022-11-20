@@ -6,12 +6,18 @@
 /*   By: jergashe <jergashe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/30 14:41:22 by jergashe          #+#    #+#             */
-/*   Updated: 2022/11/05 11:42:35 by jergashe         ###   ########.fr       */
+/*   Updated: 2022/11/20 11:57:31 by jergashe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
+// The function get list of arguments "args" and
+// type specifier "ch" which helps use to identify
+// what type of variable we need to get in order to write
+// The function returns the number of chars that were printed
+// To print the argument printing functions are used, 
+// which are in "print_functions" folder
 int	find_type_and_write(va_list args, char ch)
 {
 	int	var_len;
@@ -36,6 +42,11 @@ int	find_type_and_write(va_list args, char ch)
 	return (var_len);
 }
 
+// The function reads the string "input" until the '\0'
+// and prints every character, but,
+// if there is a type specifier it passes the type
+// specifier to the next function "find_type_and_write"
+// The function returns the number of characters printed as a whole
 int	ft_printf(const char *input, ...)
 {
 	va_list	args;
